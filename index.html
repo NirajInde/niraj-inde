@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Niraj Inde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -69,9 +70,10 @@
             z-index: 1;
             background: rgba(26, 26, 26, 0.4);
             backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 0;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 24px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4),
+                        0 0 0 1px rgba(255, 255, 255, 0.05) inset;
         }
 
         .container::before {
@@ -84,7 +86,25 @@
             background: linear-gradient(135deg, 
                 rgba(255, 255, 255, 0.03) 0%, 
                 rgba(255, 255, 255, 0) 50%,
-                rgba(255, 255, 255, 0.02) 100%);
+                rgba(255, 255, 255, 0.015) 100%);
+            pointer-events: none;
+            z-index: -1;
+            border-radius: 24px;
+        }
+
+        .container::after {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 100px;
+            background: linear-gradient(180deg, 
+                rgba(255, 255, 255, 0.03) 0%, 
+                rgba(255, 255, 255, 0) 100%);
+            filter: blur(20px);
+            border-radius: 24px 24px 0 0;
             pointer-events: none;
             z-index: -1;
         }
@@ -215,6 +235,14 @@
             position: relative;
             padding: 0 4px;
             margin: 0 2px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        a i {
+            font-size: 14px;
+            opacity: 0.9;
         }
 
         a::after {
@@ -307,7 +335,7 @@
             <h2>Ascend</h2>
             <div class="content-block">
                 <div class="bullet-item">
-                    Founder of Ascend.
+                    Founder of <a href="https://www.instagram.com/ascend_io/" target="_blank"><i class="fa-brands fa-instagram"></i> Ascend</a>.
                 </div>
                 <div class="bullet-item sub-item">
                     Building innovative solutions and scaling digital presence.
@@ -321,16 +349,33 @@
         <div class="divider"></div>
 
         <div class="section">
-            <h2>Digital Marketing</h2>
+            <h2>Social Media & Marketing</h2>
             <div class="content-block">
                 <div class="bullet-item">
-                    <span class="stat">3 years of experience</span> in digital marketing and growth strategies.
+                    <span class="stat">3 years</span> creating engaging content across multiple platforms.
                 </div>
                 <div class="bullet-item">
-                    Specialized in brand development, content strategy, and audience growth.
+                    Specialized in brand development, content strategy, and organic audience growth.
                 </div>
                 <div class="bullet-item">
-                    <span class="stat">2 years of experience</span> in the crypto space, navigating web3 and blockchain technologies.
+                    Proven track record in driving engagement and building online presence.
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section">
+            <h2>Web3 & Crypto</h2>
+            <div class="content-block">
+                <div class="bullet-item">
+                    <span class="stat">2 years</span> navigating crypto space and blockchain ecosystem.
+                </div>
+                <div class="bullet-item">
+                    Managed social media for crypto projects and web3 communities.
+                </div>
+                <div class="bullet-item">
+                    Expertise in web services, sales strategies, and digital solutions for blockchain ventures.
                 </div>
             </div>
         </div>
@@ -347,7 +392,7 @@
                     Continuously developing skills in digital marketing, technology, and entrepreneurship.
                 </div>
                 <div class="bullet-item">
-                    Follow me on <a href="https://www.instagram.com/niraj_inde" target="_blank">Instagram</a> for insights and updates.
+                    Follow me on <a href="https://www.instagram.com/niraj_inde" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a> for insights and updates.
                 </div>
             </div>
         </div>
@@ -361,13 +406,8 @@
                     Let's connect and collaborate on exciting projects.
                 </div>
                 <div class="bullet-item">
-                    Reach out to me at <a href="mailto:nirajinde2@gmail.com">nirajinde2@gmail.com</a>
+                    Reach out to me at <a href="mailto:nirajinde2@gmail.com"><i class="fa-solid fa-envelope"></i> nirajinde2@gmail.com</a>
                 </div>
                 <div class="bullet-item">
-                    Find me on <a href="https://www.linkedin.com/in/niraj-inde-9585b5271/" target="_blank">LinkedIn</a> and <a href="https://www.instagram.com/niraj_inde" target="_blank">Instagram</a>
+                    Find me on <a href="https://x.com/Niraj_Inde7" target="_blank"><i class="fa-brands fa-x-twitter"></i> X</a>, <a href="https://www.linkedin.com/in/niraj-inde-9585b5271/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a> and <a href="https://www.instagram.com/niraj_inde" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
                 </div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
